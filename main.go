@@ -194,7 +194,6 @@ func main() {
 	fileInput(os.Args[1])
 	//s := "[\n"
 	mapExcel := make(map[string]string)
-	ind := 0
 	createPool(keyWords)
 	for len(poolUrl) != 0 && time.Since(start) < timeOut {
 		urlFromPool := poolUrl[0]
